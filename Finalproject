@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+
+    <!-- Bootstrap CSS for styling and responsiveness -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #a30b0b; /* Changed background to red */
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff3f3; /* Light background for contrast */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-tabs {
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        .header-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .admin-section, .crud-section {
+            margin-top: 30px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://example.com" target="_blank">External Link</a>
+        </li>
+    </ul>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">School Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#admin">Admin Panel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crud">CRUD Operations</a>
+                </li>
+            </ul>
+            <div>
+                <button class="btn btn-outline-success mr-2">Login</button>
+                <button class="btn btn-outline-primary mr-2">Register</button>
+                <button class="btn btn-outline-danger">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <img src="images/CUA.png" alt="CUA Cardinal Login">
+    </div>
+
+    <!-- Home Section -->
+    <div class="container" id="home">
+        <h2>Welcome to the School Portal</h2>
+        <p>Your gateway to manage student activities.</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing quality education and seamless administration for students.</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@schoolportal.com">contact@schoolportal.com</a></p>
+        <p>Visit our website: <a href="https://schoolportal.com" target="_blank">School Portal</a></p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container" id="login">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Student ID/Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 School Portal. All rights reserved.
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
